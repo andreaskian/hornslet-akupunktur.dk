@@ -1,0 +1,105 @@
+@import 'compass';
+@import 'compass/reset';
+@import 'breakpoint';
+@import 'susy';
+
+@include establish-baseline;
+
+$large: (
+  column-width: 4em,
+  columns: 12,
+);
+
+$main-nav-height: 2.5em;
+
+@include susy-breakpoint(40em, $large) {
+  [class^="wrapper"] {
+    position: relative;
+  }
+}
+
+body {
+  @include container();
+  @include susy-breakpoint(40em, $large) {
+    @include container();
+  }
+}
+
+.main-header {
+  height: $main-nav-height;
+  line-height: $main-nav-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @include susy-breakpoint(40em, $large) {
+    width: span(5);
+  }
+}
+
+.main-nav {
+  @extend .main-header;
+  top: $main-nav-height;
+
+  @include susy-breakpoint(40em, $large) {
+    display: block;
+    left: span(5);
+    text-align: right;
+    top: 0;
+    width: span(7);
+
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@include breakpoint(max-width 40em) {
+  .toggler {
+    position: absolute;
+    right: 0;
+    top: -$main-nav-height;
+  }
+
+  #nav:target       .toggler--open,
+  #nav:not(:target) .toggler--close,
+  #nav:not(:target) ul { display: none; }
+
+  #nav:not(:target) .toggler--open,
+  #nav:target       .toggler--close,
+  #nav:target       ul { display: block; }
+}
+
+@include susy-breakpoint(40em, $large) {
+  .toggler {
+    display: none;
+  }
+}
+
+.main-content {
+  margin-top: $main-nav-height;
+
+  @include susy-breakpoint(40em, $large) {
+    @include span(9);
+  }
+}
+
+aside {
+  @include susy-breakpoint(40em, $large) {
+    margin-top: $main-nav-height;
+    @include span(last 3);
+  }
+}
+
+footer {
+  @include susy-breakpoint(40em, $large) {
+    @include span(full);
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
