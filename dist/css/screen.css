@@ -629,6 +629,14 @@ html {
     width: 23.72881%;
     float: right;
     margin-right: 0; } }
+/* line 44, ../../src/scss/_grid.scss */
+.wrapper-main-nav {
+  z-index: 2; }
+
+/* line 48, ../../src/scss/_grid.scss */
+.wrapper-page-outer {
+  z-index: 1; }
+
 /* line 2, ../../src/scss/_base.scss */
 h1 {
   color: #7e05f1; }
