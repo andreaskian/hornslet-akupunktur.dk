@@ -2,11 +2,16 @@
 
 .wrapper-header,
 .wrapper-page,
+.slider
 .main-footer {
   @include container();
   @include susy-breakpoint($small, $large) {
     @include container();
   }
+}
+
+.slider {
+  @include span(full);
 }
 
 @include susy-breakpoint($small, $large) {
