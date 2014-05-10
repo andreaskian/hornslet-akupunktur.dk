@@ -1,0 +1,30 @@
+// Headings
+h1 { color: $secondary-color; }
+h2,
+h3,
+h4,
+h5,
+h6 { color: $primary-color; }
+
+body {
+    background: $body-background;
+}
+
+a {
+    text-decoration: none;
+    &:link, &:active {
+        color: $link-color;
+    }
+    &:visited {
+        color: darken($link-color, 5%);
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.wrapper-page-outer {
+    background: $page-background;
+}
+

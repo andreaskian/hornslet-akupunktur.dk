@@ -1,0 +1,84 @@
+%nav-link {
+  color: $header-color;
+  display: inline-block;
+  padding: 0 $small-gutter;
+  @include susy-breakpoint($small, $large) {
+    padding: 0 .3em;
+  }
+  &:link,
+  &:visited,
+  &:active {
+    color: $header-color;
+  }
+  &:hover {
+    color: lighten($secondary-color, 10%);
+    text-decoration: none;
+  }
+}
+
+%nav-styles {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      @include breakpoint(max-width $small) {
+        display: block;
+      }
+      a {
+        @extend %nav-link;
+      }
+    }
+  }
+}
+
+.wrapper-main-nav {
+  @extend .main-header;
+  top: $main-nav-height;
+  color: $header-color;
+  @include susy-breakpoint($small, $large) {
+    display: block;
+    text-align: right;
+    top: 0;
+  }
+}
+
+.main-nav {
+  @extend %nav-styles;
+  background: $header-background;
+  @include susy-breakpoint($small, $large) {
+    background: transparent;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .toggler {
+    position: absolute;
+    right: 0;
+    top: -$main-nav-height;
+    padding: 0 $small-gutter;
+    &:link,
+    &:visited,
+    &:active {
+      color: $header-color;
+    }
+    &:hover {
+      color: lighten($secondary-color, 10%);
+      text-decoration: none;
+    }
+  }
+
+  #nav:target       .toggler--open,
+  #nav:not(:target) .toggler--close,
+  #nav:not(:target) ul { display: none; }
+
+  #nav:not(:target) .toggler--open,
+  #nav:target       .toggler--close,
+  #nav:target       ul { display: block; }
+}
+
+@include susy-breakpoint($small, $large) {
+  .toggler {
+    display: none !important;
+  }
+}

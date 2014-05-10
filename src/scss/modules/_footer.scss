@@ -1,0 +1,10 @@
+.wrapper-footer {
+  background: $footer-background;
+  height: $main-nav-height;
+  line-height: $main-nav-height;
+  color: $footer-color;
+}
+
+  .main-footer {
+    @extend %nav-styles
+  }

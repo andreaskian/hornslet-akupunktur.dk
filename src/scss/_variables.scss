@@ -1,0 +1,25 @@
+// Globals
+$main-nav-height    : 2.5em;
+$small              : 40em;
+$small-gutter       : 3%;
+$large: (
+  column-width: 4em,
+  columns: 12,
+);
+
+// Colors
+$primary-color      : #5e0e86;
+$secondary-color    : #7e05f1;
+
+$header-background  : $primary-color;
+$header-color       : #fff;
+
+$page-background    : #fff;
+$link-color         : $secondary-color;
+
+$banner-background  : #f5ebfe;
+$body-background    : $primary-color;
+
+$footer-background  : $primary-color;
+$footer-color       : #fff;
+

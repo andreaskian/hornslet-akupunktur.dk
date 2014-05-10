@@ -1,0 +1,32 @@
+@include establish-baseline;
+
+.wrapper-page,
+.main-footer {
+  @include container();
+  @include susy-breakpoint($small, $large) {
+    @include container();
+  }
+}
+
+@include susy-breakpoint($small, $large) {
+  [class^="wrapper"] {
+    position: relative;
+  }
+
+  .main-header {
+    width: span(5);
+  }
+
+  .main-nav {
+    @include container();
+  }
+
+  .main-content {
+    @include span(9);
+  }
+
+  aside {
+    @include span(last 3);
+  }
+
+}

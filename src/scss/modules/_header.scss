@@ -1,0 +1,12 @@
+.wrapper-header-outer {
+  background: $header-background;
+  height: $main-nav-height;
+}
+
+.main-header {
+  height: $main-nav-height;
+  line-height: $main-nav-height;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
