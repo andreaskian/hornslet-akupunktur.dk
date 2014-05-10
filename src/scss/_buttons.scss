@@ -1,0 +1,14 @@
+.button {
+  background: $primary-color;
+  color: $primary--alt-color;
+  display: block;
+  padding: 2% 3%;
+  text-align: center;
+
+  &:link,
+  &:active,
+  &:visited,
+  &:hover {
+    color: $primary--alt-color;
+  }
+}

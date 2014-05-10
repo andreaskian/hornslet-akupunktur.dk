@@ -1,3 +1,46 @@
 aside {
   margin-top: $main-nav-height;
+
+  section {
+    @include clearfix();
+    background: $banner-background;
+    width: 100%;
+    h2, p {
+        @include clearfix();
+        padding: 0 1em;
+    }
+    p {
+        padding: 0 1.5em;
+    }
+  }
+
+  @include susy-breakpoint($small, $large) {
+    .button {
+      float: right;
+    }
+  }
+}
+
+.frontpage {
+  margin-top: 0;
+  section {
+    margin-bottom: 1.5em;
+    &.wide {
+      position: relative;
+      .map {
+        background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
+        height: 288px;
+        width: 100%;
+        @include susy-breakpoint($small, $large) {
+          height: 100%;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    img {
+      float: right;
+      max-width: 6em;
+    }
+  }
 }

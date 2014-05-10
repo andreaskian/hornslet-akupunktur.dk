@@ -9,10 +9,11 @@ $large: (
 
 // Colors
 $primary-color      : #5e0e86;
+$primary--alt-color : #fff;
 $secondary-color    : #7e05f1;
 
 $header-background  : $primary-color;
-$header-color       : #fff;
+$header-color       : $primary--alt-color;
 
 $page-background    : #fff;
 $link-color         : $secondary-color;

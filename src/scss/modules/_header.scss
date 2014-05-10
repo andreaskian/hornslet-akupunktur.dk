@@ -16,17 +16,20 @@
     float: left;
     font-weight: normal;
     line-height: $main-nav-height/3;
-    margin: 0;
+    margin-left: $small-gutter;
     text-transform: uppercase;
     span {
         display: block;
     }
     .small {
-        @include adjust-font-size-to(11px);
-        font-style: italic;
-        line-height: $main-nav-height/2;
-        text-align: right;
-        text-transform: none;
+      @include adjust-font-size-to(11px);
+      font-style: italic;
+      line-height: $main-nav-height/2;
+      text-align: right;
+      text-transform: none;
+    }
+    @include susy-breakpoint($small, $large) {
+      margin-left: 0;
     }
   }
 }

@@ -27,5 +27,11 @@ a {
 .wrapper-page-outer {
     @include clearfix();
     background: $page-background;
+    padding-left: $small-gutter;
+    padding-right: $small-gutter;
+    @include susy-breakpoint($small, $large) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 

@@ -628,12 +628,41 @@ html {
   aside {
     width: 23.72881%;
     float: right;
-    margin-right: 0; } }
-/* line 44, ../../src/scss/_grid.scss */
+    margin-right: 0; }
+    /* line 40, ../../src/scss/_grid.scss */
+    aside.frontpage {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      /* line 42, ../../src/scss/_grid.scss */
+      aside.frontpage section {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%; }
+        /* line 45, ../../src/scss/_grid.scss */
+        aside.frontpage section:nth-child(3n) {
+          float: right;
+          margin-right: 0; }
+        /* line 49, ../../src/scss/_grid.scss */
+        aside.frontpage section.wide {
+          width: 66.10169%;
+          float: left;
+          margin-right: 1.69492%; }
+          /* line 52, ../../src/scss/_grid.scss */
+          aside.frontpage section.wide .map {
+            width: 49.15254%;
+            float: right;
+            margin-right: 0; }
+          /* line 56, ../../src/scss/_grid.scss */
+          aside.frontpage section.wide + section {
+            float: right;
+            margin-right: 0; } }
+/* line 66, ../../src/scss/_grid.scss */
 .wrapper-main-nav {
   z-index: 2; }
 
-/* line 48, ../../src/scss/_grid.scss */
+/* line 70, ../../src/scss/_grid.scss */
 .wrapper-page-outer {
   z-index: 1; }
 
@@ -670,7 +699,25 @@ a {
 .wrapper-page-outer {
   overflow: hidden;
   *zoom: 1;
-  background: white; }
+  background: white;
+  padding-left: 3%;
+  padding-right: 3%; }
+  @media (min-width: 40em) {
+    /* line 27, ../../src/scss/_base.scss */
+    .wrapper-page-outer {
+      padding-left: 0;
+      padding-right: 0; } }
+
+/* line 1, ../../src/scss/_buttons.scss */
+.button {
+  background: #5e0e86;
+  color: white;
+  display: block;
+  padding: 2% 3%;
+  text-align: center; }
+  /* line 8, ../../src/scss/_buttons.scss */
+  .button:link, .button:active, .button:visited, .button:hover {
+    color: white; }
 
 /* line 1, ../../src/scss/modules/_header.scss */
 .wrapper-header-outer {
@@ -696,7 +743,7 @@ a {
     float: left;
     font-weight: normal;
     line-height: 1.25em;
-    margin: 0;
+    margin-left: 3%;
     text-transform: uppercase; }
     /* line 21, ../../src/scss/modules/_header.scss */
     .main-header h1 span, .wrapper-main-nav h1 span {
@@ -709,6 +756,10 @@ a {
       line-height: 1.875em;
       text-align: right;
       text-transform: none; }
+    @media (min-width: 40em) {
+      /* line 12, ../../src/scss/modules/_header.scss */
+      .main-header h1, .wrapper-main-nav h1 {
+        margin-left: 0; } }
 
 /* line 1, ../../src/scss/modules/_nav.scss */
 .main-nav ul li a, .main-footer ul li a {
@@ -794,6 +845,49 @@ a {
 /* line 1, ../../src/scss/modules/_sidebar.scss */
 aside {
   margin-top: 3.75em; }
+  /* line 4, ../../src/scss/modules/_sidebar.scss */
+  aside section {
+    overflow: hidden;
+    *zoom: 1;
+    background: #f5ebfe;
+    width: 100%; }
+    /* line 8, ../../src/scss/modules/_sidebar.scss */
+    aside section h2, aside section p {
+      overflow: hidden;
+      *zoom: 1;
+      padding: 0 1em; }
+    /* line 12, ../../src/scss/modules/_sidebar.scss */
+    aside section p {
+      padding: 0 1.5em; }
+  @media (min-width: 40em) {
+    /* line 18, ../../src/scss/modules/_sidebar.scss */
+    aside .button {
+      float: right; } }
+
+/* line 24, ../../src/scss/modules/_sidebar.scss */
+.frontpage {
+  margin-top: 0; }
+  /* line 26, ../../src/scss/modules/_sidebar.scss */
+  .frontpage section {
+    margin-bottom: 1.5em; }
+    /* line 28, ../../src/scss/modules/_sidebar.scss */
+    .frontpage section.wide {
+      position: relative; }
+      /* line 30, ../../src/scss/modules/_sidebar.scss */
+      .frontpage section.wide .map {
+        background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
+        height: 288px;
+        width: 100%; }
+        @media (min-width: 40em) {
+          /* line 30, ../../src/scss/modules/_sidebar.scss */
+          .frontpage section.wide .map {
+            height: 100%;
+            position: absolute;
+            right: 0; } }
+    /* line 41, ../../src/scss/modules/_sidebar.scss */
+    .frontpage section img {
+      float: right;
+      max-width: 6em; }
 
 /* line 1, ../../src/scss/modules/_footer.scss */
 .wrapper-footer {

@@ -37,6 +37,28 @@
 
   aside {
     @include span(last 3);
+    &.frontpage {
+      @include span(full);
+      section {
+        @include span(4);
+
+        &:nth-child(3n) {
+          @include omega;
+        }
+
+        &.wide {
+          @include span(8);
+
+          .map {
+            @include span(6 omega);
+          }
+
+          & + section {
+            @include omega;
+          }
+        }
+      }
+    }
   }
 
 }
