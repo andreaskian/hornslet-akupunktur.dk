@@ -31,6 +31,10 @@
     @include span(9);
   }
 
+  .main-footer {
+    @include container();
+  }
+
   aside {
     @include span(last 3);
   }

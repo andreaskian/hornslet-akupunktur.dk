@@ -614,6 +614,17 @@ html {
     margin-right: 1.69492%; }
 
   /* line 34, ../../src/scss/_grid.scss */
+  .main-footer {
+    max-width: 59em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+    .main-footer:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+  /* line 38, ../../src/scss/_grid.scss */
   aside {
     width: 23.72881%;
     float: right;
