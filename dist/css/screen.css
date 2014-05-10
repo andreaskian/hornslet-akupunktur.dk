@@ -547,12 +547,14 @@ html {
   line-height: 1.5em; }
 
 /* line 3, ../../src/scss/_grid.scss */
+.wrapper-header,
 .wrapper-page,
 .main-footer {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .wrapper-header:after,
   .wrapper-page:after,
   .main-footer:after {
     content: " ";
@@ -560,12 +562,14 @@ html {
     clear: both; }
   @media (min-width: 40em) {
     /* line 3, ../../src/scss/_grid.scss */
+    .wrapper-header,
     .wrapper-page,
     .main-footer {
       max-width: 59em;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+      .wrapper-header:after,
       .wrapper-page:after,
       .main-footer:after {
         content: " ";
@@ -573,15 +577,15 @@ html {
         clear: both; } }
 
 @media (min-width: 40em) {
-  /* line 12, ../../src/scss/_grid.scss */
+  /* line 13, ../../src/scss/_grid.scss */
   [class^="wrapper"] {
     position: relative; }
 
-  /* line 16, ../../src/scss/_grid.scss */
+  /* line 17, ../../src/scss/_grid.scss */
   .main-header, .wrapper-main-nav {
     width: 40.67797%; }
 
-  /* line 20, ../../src/scss/_grid.scss */
+  /* line 21, ../../src/scss/_grid.scss */
   .main-nav {
     max-width: 59em;
     margin-left: auto;
@@ -592,13 +596,13 @@ html {
       display: block;
       clear: both; }
 
-  /* line 24, ../../src/scss/_grid.scss */
+  /* line 25, ../../src/scss/_grid.scss */
   .main-content {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%; }
 
-  /* line 28, ../../src/scss/_grid.scss */
+  /* line 29, ../../src/scss/_grid.scss */
   aside {
     width: 23.72881%;
     float: right;
@@ -634,6 +638,8 @@ a {
 
 /* line 27, ../../src/scss/_base.scss */
 .wrapper-page-outer {
+  overflow: hidden;
+  *zoom: 1;
   background: white; }
 
 /* line 1, ../../src/scss/modules/_header.scss */
@@ -648,6 +654,31 @@ a {
   position: absolute;
   top: 0;
   width: 100%; }
+  /* line 12, ../../src/scss/modules/_header.scss */
+  .main-header h1, .wrapper-main-nav h1 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 0em;
+    padding-top: 0.225em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    color: white;
+    float: left;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: 0;
+    text-transform: uppercase; }
+    /* line 21, ../../src/scss/modules/_header.scss */
+    .main-header h1 span, .wrapper-main-nav h1 span {
+      display: block; }
+    /* line 24, ../../src/scss/modules/_header.scss */
+    .main-header h1 .small, .wrapper-main-nav h1 .small {
+      font-size: 0.6875em;
+      line-height: 2.18182em;
+      font-style: italic;
+      line-height: 1.25em;
+      text-align: right;
+      text-transform: none; }
 
 /* line 1, ../../src/scss/modules/_nav.scss */
 .main-nav ul li a, .main-footer ul li a {

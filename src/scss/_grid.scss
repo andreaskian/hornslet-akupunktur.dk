@@ -1,5 +1,6 @@
 @include establish-baseline;
 
+.wrapper-header,
 .wrapper-page,
 .main-footer {
   @include container();

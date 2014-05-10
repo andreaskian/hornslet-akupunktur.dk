@@ -9,4 +9,24 @@
   position: absolute;
   top: 0;
   width: 100%;
+  h1 {
+    @include adjust-font-size-to(16px);
+    @include rhythm(0, .15, 0, 0);
+    color: $header-color;
+    float: left;
+    font-weight: normal;
+    line-height: $main-nav-height/2;
+    margin: 0;
+    text-transform: uppercase;
+    span {
+        display: block;
+    }
+    .small {
+        @include adjust-font-size-to(11px);
+        font-style: italic;
+        line-height: $main-nav-height/2;
+        text-align: right;
+        text-transform: none;
+    }
+  }
 }

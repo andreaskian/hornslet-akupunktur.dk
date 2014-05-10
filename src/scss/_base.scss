@@ -25,6 +25,7 @@ a {
 
 
 .wrapper-page-outer {
+    @include clearfix();
     background: $page-background;
 }
 
