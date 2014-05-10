@@ -1,9 +1,12 @@
 %nav-link {
   color: $header-color;
-  display: inline-block;
+  display: block;
+  line-height: 2.5em;
   padding: 0 $small-gutter;
   @include susy-breakpoint($small, $large) {
+    display: inline-block;
     padding: 0 .3em;
+    line-height: $main-nav-height;
   }
   &:link,
   &:visited,

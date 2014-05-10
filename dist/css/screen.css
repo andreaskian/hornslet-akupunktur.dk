@@ -675,12 +675,12 @@ a {
 /* line 1, ../../src/scss/modules/_header.scss */
 .wrapper-header-outer {
   background: #5e0e86;
-  height: 2.5em; }
+  height: 3.75em; }
 
 /* line 6, ../../src/scss/modules/_header.scss */
 .main-header, .wrapper-main-nav {
-  height: 2.5em;
-  line-height: 2.5em;
+  height: 3.75em;
+  line-height: 3.75em;
   position: absolute;
   top: 0;
   width: 100%; }
@@ -689,7 +689,7 @@ a {
     font-size: 1em;
     line-height: 1.5em;
     margin-top: 0em;
-    padding-top: 0.225em;
+    padding-top: 0.6em;
     padding-bottom: 0em;
     margin-bottom: 0em;
     color: white;
@@ -706,97 +706,100 @@ a {
       font-size: 0.6875em;
       line-height: 2.18182em;
       font-style: italic;
-      line-height: 1.25em;
+      line-height: 1.875em;
       text-align: right;
       text-transform: none; }
 
 /* line 1, ../../src/scss/modules/_nav.scss */
 .main-nav ul li a, .main-footer ul li a {
   color: white;
-  display: inline-block;
+  display: block;
+  line-height: 2.5em;
   padding: 0 3%; }
   @media (min-width: 40em) {
     /* line 1, ../../src/scss/modules/_nav.scss */
     .main-nav ul li a, .main-footer ul li a {
-      padding: 0 .3em; } }
-  /* line 8, ../../src/scss/modules/_nav.scss */
+      display: inline-block;
+      padding: 0 .3em;
+      line-height: 3.75em; } }
+  /* line 11, ../../src/scss/modules/_nav.scss */
   .main-nav ul li a:link, .main-footer ul li a:link, .main-nav ul li a:visited, .main-footer ul li a:visited, .main-nav ul li a:active, .main-footer ul li a:active {
     color: white; }
-  /* line 13, ../../src/scss/modules/_nav.scss */
+  /* line 16, ../../src/scss/modules/_nav.scss */
   .main-nav ul li a:hover, .main-footer ul li a:hover {
     color: #972efb;
     text-decoration: none; }
 
-/* line 20, ../../src/scss/modules/_nav.scss */
+/* line 23, ../../src/scss/modules/_nav.scss */
 .main-nav ul, .main-footer ul {
   margin: 0;
   padding: 0; }
-  /* line 23, ../../src/scss/modules/_nav.scss */
+  /* line 26, ../../src/scss/modules/_nav.scss */
   .main-nav ul li, .main-footer ul li {
     display: inline-block; }
     @media (max-width: 40em) {
-      /* line 23, ../../src/scss/modules/_nav.scss */
+      /* line 26, ../../src/scss/modules/_nav.scss */
       .main-nav ul li, .main-footer ul li {
         display: block; } }
 
-/* line 35, ../../src/scss/modules/_nav.scss */
+/* line 38, ../../src/scss/modules/_nav.scss */
 .wrapper-main-nav {
-  top: 2.5em;
+  top: 3.75em;
   color: white; }
   @media (min-width: 40em) {
-    /* line 35, ../../src/scss/modules/_nav.scss */
+    /* line 38, ../../src/scss/modules/_nav.scss */
     .wrapper-main-nav {
       display: block;
       text-align: right;
       top: 0; } }
 
-/* line 46, ../../src/scss/modules/_nav.scss */
+/* line 49, ../../src/scss/modules/_nav.scss */
 .main-nav {
   background: #5e0e86; }
   @media (min-width: 40em) {
-    /* line 46, ../../src/scss/modules/_nav.scss */
+    /* line 49, ../../src/scss/modules/_nav.scss */
     .main-nav {
       background: transparent; } }
 
 @media (max-width: 40em) {
-  /* line 55, ../../src/scss/modules/_nav.scss */
+  /* line 58, ../../src/scss/modules/_nav.scss */
   .toggler {
     position: absolute;
     right: 0;
-    top: -2.5em;
+    top: -3.75em;
     padding: 0 3%; }
-    /* line 60, ../../src/scss/modules/_nav.scss */
+    /* line 63, ../../src/scss/modules/_nav.scss */
     .toggler:link, .toggler:visited, .toggler:active {
       color: white; }
-    /* line 65, ../../src/scss/modules/_nav.scss */
+    /* line 68, ../../src/scss/modules/_nav.scss */
     .toggler:hover {
       color: #972efb;
       text-decoration: none; }
 
-  /* line 71, ../../src/scss/modules/_nav.scss */
+  /* line 74, ../../src/scss/modules/_nav.scss */
   #nav:target .toggler--open,
   #nav:not(:target) .toggler--close,
   #nav:not(:target) ul {
     display: none; }
 
-  /* line 75, ../../src/scss/modules/_nav.scss */
+  /* line 78, ../../src/scss/modules/_nav.scss */
   #nav:not(:target) .toggler--open,
   #nav:target .toggler--close,
   #nav:target ul {
     display: block; } }
 @media (min-width: 40em) {
-  /* line 81, ../../src/scss/modules/_nav.scss */
+  /* line 84, ../../src/scss/modules/_nav.scss */
   .toggler {
     display: none !important; } }
 /* line 1, ../../src/scss/modules/_sidebar.scss */
 aside {
-  margin-top: 2.5em; }
+  margin-top: 3.75em; }
 
 /* line 1, ../../src/scss/modules/_footer.scss */
 .wrapper-footer {
   background: #5e0e86;
-  height: 2.5em;
-  line-height: 2.5em;
+  height: 3.75em;
+  line-height: 3.75em;
   color: white; }
 
    /*
