@@ -1,8 +1,9 @@
 aside {
-  margin-top: $main-nav-height;
+  @include leader(1, $base-font-size);
 
   section {
     @include clearfix();
+    @include trailer(1, $base-font-size);
     background: $banner-background;
     width: 100%;
     h2, p {
@@ -24,7 +25,7 @@ aside {
 .frontpage {
   margin-top: 0;
   section {
-    margin-bottom: 1.5em;
+    @include trailer(1, $base-font-size);
     &.wide {
       position: relative;
       .map {

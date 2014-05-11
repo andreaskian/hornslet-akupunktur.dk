@@ -715,9 +715,21 @@ a {
   display: block;
   padding: 2% 3%;
   text-align: center; }
-  /* line 8, ../../src/scss/_buttons.scss */
+  @media (min-width: 40em) {
+    /* line 1, ../../src/scss/_buttons.scss */
+    .button {
+      padding: 2% 1em; } }
+  /* line 12, ../../src/scss/_buttons.scss */
   .button:link, .button:active, .button:visited, .button:hover {
-    color: white; }
+    color: white;
+    text-decoration: none; }
+  /* line 20, ../../src/scss/_buttons.scss */
+  .button:hover {
+    background: #7e13b4; }
+  /* line 24, ../../src/scss/_buttons.scss */
+  .button:active {
+    background: #4e0c6f;
+    color: #ebccfa; }
 
 /* line 1, ../../src/scss/modules/_header.scss */
 .wrapper-header-outer {
@@ -844,47 +856,48 @@ a {
     display: none !important; } }
 /* line 1, ../../src/scss/modules/_sidebar.scss */
 aside {
-  margin-top: 3.75em; }
+  margin-top: 1.5em; }
   /* line 4, ../../src/scss/modules/_sidebar.scss */
   aside section {
     overflow: hidden;
     *zoom: 1;
+    margin-bottom: 1.5em;
     background: #f5ebfe;
     width: 100%; }
-    /* line 8, ../../src/scss/modules/_sidebar.scss */
+    /* line 9, ../../src/scss/modules/_sidebar.scss */
     aside section h2, aside section p {
       overflow: hidden;
       *zoom: 1;
       padding: 0 1em; }
-    /* line 12, ../../src/scss/modules/_sidebar.scss */
+    /* line 13, ../../src/scss/modules/_sidebar.scss */
     aside section p {
       padding: 0 1.5em; }
   @media (min-width: 40em) {
-    /* line 18, ../../src/scss/modules/_sidebar.scss */
+    /* line 19, ../../src/scss/modules/_sidebar.scss */
     aside .button {
       float: right; } }
 
-/* line 24, ../../src/scss/modules/_sidebar.scss */
+/* line 25, ../../src/scss/modules/_sidebar.scss */
 .frontpage {
   margin-top: 0; }
-  /* line 26, ../../src/scss/modules/_sidebar.scss */
+  /* line 27, ../../src/scss/modules/_sidebar.scss */
   .frontpage section {
     margin-bottom: 1.5em; }
-    /* line 28, ../../src/scss/modules/_sidebar.scss */
+    /* line 29, ../../src/scss/modules/_sidebar.scss */
     .frontpage section.wide {
       position: relative; }
-      /* line 30, ../../src/scss/modules/_sidebar.scss */
+      /* line 31, ../../src/scss/modules/_sidebar.scss */
       .frontpage section.wide .map {
         background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
         height: 288px;
         width: 100%; }
         @media (min-width: 40em) {
-          /* line 30, ../../src/scss/modules/_sidebar.scss */
+          /* line 31, ../../src/scss/modules/_sidebar.scss */
           .frontpage section.wide .map {
             height: 100%;
             position: absolute;
             right: 0; } }
-    /* line 41, ../../src/scss/modules/_sidebar.scss */
+    /* line 42, ../../src/scss/modules/_sidebar.scss */
     .frontpage section img {
       float: right;
       max-width: 6em; }
