@@ -1,0 +1,47 @@
+- var page = 'kontakt'
+
+doctype html
+html(lang='da')
+    head
+        include modules/head
+        title Kontakt | Jytte Bøgeskov
+    body
+        include modules/header
+        .wrapper-page-outer
+            .wrapper-page
+                main(role='main', class='main-content')
+                    article
+                        h1 Kontakt
+                        p
+                            | Du kan ringe på tlf:&nbsp;
+                            a(href='tel:23674453') 23674453
+                            | , eller sende en sms så vil jeg kontakte dig.
+                        p Er du i tvivl om akupunktur er noget for dig, eller har du andre spørgsmål, er du velkommen til at kontakte mig.
+                            | Jeg har åben efter aftale, også om aftenen, hvis det passer dig bedst.
+                            | Jeg har klinik på min hjemmeadresse Tingvej 69A 8543 Hornslet
+                        h2 Priser
+                        table
+                            tr
+                                td Akupunktur behandling
+                                td 350 kr.
+                            tr
+                                td(colspan=2)
+                                    | Den første behandling kan vare ca, 1,5 time, følgende behandlinger 45 min – 1 time
+                                    br
+                                    br
+                            tr
+                                td Nada behandling
+                                td 75 kr.
+                            tr
+                                td 8 behandlinger
+                                td 500 kr.
+                            tr
+                                td(colspan=2)
+                                    | Nada behandlinger vare 45 minutter hvor du hviler med nåle i ørene.
+                        p
+                            | Husk at medbringe et lagen og håndklæde til hver behandling.
+                        p
+                            | Hvis du er medlem af sygesikringen Danmark kan du få tilskud til behandlinger, læs mere på <a href="http://www.sygeforsikring.dk/Default.aspx?ID=750" target="_blank">www.sygeforsikring.dk</a>
+                include modules/sidebar
+        include modules/nav
+        include modules/footer
