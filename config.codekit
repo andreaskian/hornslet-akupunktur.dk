@@ -11,24 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/akupunktur\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/akupunktur\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/behandlingsformer\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/behandlingsformer\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/css\/_grid.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -58,13 +40,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/images\/rab.png": {
+	"\/dist\/images\/RAB.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 51531,
-		"inputAbbreviatedPath": "\/dist\/images\/rab.png",
-		"outputAbbreviatedPath": "\/dist\/images\/rab.png",
+		"inputAbbreviatedPath": "\/dist\/images\/RAB.png",
+		"outputAbbreviatedPath": "\/dist\/images\/RAB.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -91,27 +73,9 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/kontakt\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/kontakt\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/priser\/index.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/priser\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -273,6 +237,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/src\/jade\/modules\/sidebar\/behandlingsformer.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/behandlingsformer.jade",
+		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/behandlingsformer.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/src\/jade\/modules\/sidebar\/danske-Akupunktorer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -280,17 +255,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/danske-Akupunktorer.jade",
 		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/danske-Akupunktorer.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/src\/jade\/modules\/sidebar\/forste-behandling.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/forste-behandling.jade",
-		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/forste-behandling.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -306,13 +270,24 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/src\/jade\/modules\/sidebar\/tidsbestilling.jade": {
+	"\/src\/jade\/modules\/sidebar\/hvad-hjaelper-akupunktur-for.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/tidsbestilling.jade",
-		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/tidsbestilling.html",
+		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/hvad-hjaelper-akupunktur-for.jade",
+		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/hvad-hjaelper-akupunktur-for.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/src\/jade\/modules\/sidebar\/kontakt-priser.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/kontakt-priser.jade",
+		"outputAbbreviatedPath": "\/src\/jade\/modules\/sidebar\/kontakt-priser.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -339,13 +314,13 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/src\/jade\/priser.jade": {
+	"\/src\/jade\/om-mig.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/jade\/priser.jade",
-		"outputAbbreviatedPath": "\/dist\/priser\/index.html",
+		"inputAbbreviatedPath": "\/src\/jade\/om-mig.jade",
+		"outputAbbreviatedPath": "\/dist\/om\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
