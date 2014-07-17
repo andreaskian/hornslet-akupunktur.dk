@@ -281,6 +281,7 @@ h1 {
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
   h2 {
     @include adjust-font-size-to( $h2-font-size );
+    line-height: 1.3em;
     @include leader(1, $h2-font-size);
     @include trailer(1, $h2-font-size);
   }

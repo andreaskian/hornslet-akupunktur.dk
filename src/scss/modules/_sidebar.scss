@@ -13,6 +13,10 @@ aside {
     p {
         padding: 0 1.5em;
     }
+    img {
+      float: right;
+      max-width: 6em;
+    }
   }
 
   @include susy-breakpoint($small, $large) {
@@ -26,22 +30,29 @@ aside {
   margin-top: 0;
   section {
     @include trailer(1, $base-font-size);
-    &.wide {
-      position: relative;
-      .map {
-        background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
-        height: 288px;
-        width: 100%;
-        @include susy-breakpoint($small, $large) {
-          height: 100%;
-          position: absolute;
-          right: 0;
-        }
+    position: relative;
+
+    @include susy-breakpoint($small, $large) {
+      min-height: 17em;
+
+      .container-button {
+        bottom: 0;
+        position: absolute;
+        right: 0;
       }
     }
-    img {
-      float: right;
-      max-width: 6em;
-    }
+
+    // &.wide {
+    //   .map {
+    //     background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
+    //     height: 288px;
+    //     width: 100%;
+    //     @include susy-breakpoint($small, $large) {
+    //       height: 100%;
+    //       position: absolute;
+    //       right: 0;
+    //     }
+    //   }
+    // }
   }
 }

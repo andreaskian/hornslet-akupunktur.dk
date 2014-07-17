@@ -645,20 +645,10 @@ html {
         aside.frontpage section:nth-child(3n) {
           float: right;
           margin-right: 0; }
-        /* line 49, ../../src/scss/_grid.scss */
-        aside.frontpage section.wide {
-          width: 66.10169%;
-          float: left;
-          margin-right: 1.69492%; }
-          /* line 52, ../../src/scss/_grid.scss */
-          aside.frontpage section.wide .map {
-            width: 49.15254%;
-            float: right;
-            margin-right: 0; }
-          /* line 56, ../../src/scss/_grid.scss */
-          aside.frontpage section.wide + section {
-            float: right;
-            margin-right: 0; } }
+        /* line 56, ../../src/scss/_grid.scss */
+        aside.frontpage section.wide + section {
+          float: right;
+          margin-right: 0; } }
 /* line 66, ../../src/scss/_grid.scss */
 .wrapper-main-nav {
   z-index: 2; }
@@ -892,16 +882,10 @@ aside {
     @media (min-width: 40em) {
       /* line 31, ../../src/scss/modules/_sidebar.scss */
       .frontpage section {
-        min-height: 13em; } }
-    /* line 40, ../../src/scss/modules/_sidebar.scss */
-    .frontpage section.wide .map {
-      background: url(http://maps.googleapis.com/maps/api/staticmap?center=Tingvej+69A+8543+Hornslet&zoom=15&scale=1&size=620x288&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:purple%7CTingvej+69A+8543+Hornslet) center;
-      height: 288px;
-      width: 100%; }
-      @media (min-width: 40em) {
-        /* line 40, ../../src/scss/modules/_sidebar.scss */
-        .frontpage section.wide .map {
-          height: 100%;
+        min-height: 17em; }
+        /* line 38, ../../src/scss/modules/_sidebar.scss */
+        .frontpage section .container-button {
+          bottom: 0;
           position: absolute;
           right: 0; } }
 
