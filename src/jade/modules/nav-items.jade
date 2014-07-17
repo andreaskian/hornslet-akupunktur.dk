@@ -1,6 +1,20 @@
+mixin li (active, name)
+    if page!= active
+        li(class='main-nav-item')
+            if active!= 'frontpage'
+                a(href='/' + active)= name
+            else
+                a(href='/')= name
+    else
+        li(class='main-nav-item main-nav-item--active')
+            if active!= 'frontpage'
+                a(href='/' + active)= name
+            else
+                a(href='/')= name
+
 ul
-    li: a(href='/') Forside
-    li: a(href='/akupunktur') Akupunktur
-    li: a(href='/behandlingsformer') Behandlingsformer
-    li: a(href='/kontakt') Kontakt &amp; priser
-    li: a(href='/om') Om mig
+    +li('frontpage','Forside')
+    +li('akupunktur','Akupunktur')
+    +li('behandlingsformer','Behandlingsformer')
+    +li('kontakt','Kontakt')
+    +li('om','Om mig')
