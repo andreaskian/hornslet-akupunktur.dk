@@ -1,12 +1,13 @@
 .button {
   background: $primary-color;
+  border: 0;
   color: $primary--alt-color;
   display: block;
   padding: 2% 3%;
   text-align: center;
 
   @include susy-breakpoint($small, $large) {
-    padding: 2% 1em;
+    padding: .5em 1em;
   }
 
   &:link,

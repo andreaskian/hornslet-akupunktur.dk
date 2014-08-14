@@ -702,6 +702,7 @@ a {
 /* line 1, ../../src/scss/_buttons.scss */
 .button {
   background: #5e0e86;
+  border: 0;
   color: white;
   display: block;
   padding: 2% 3%;
@@ -709,18 +710,39 @@ a {
   @media (min-width: 40em) {
     /* line 1, ../../src/scss/_buttons.scss */
     .button {
-      padding: 2% 1em; } }
-  /* line 12, ../../src/scss/_buttons.scss */
+      padding: .5em 1em; } }
+  /* line 13, ../../src/scss/_buttons.scss */
   .button:link, .button:active, .button:visited, .button:hover {
     color: white;
     text-decoration: none; }
-  /* line 20, ../../src/scss/_buttons.scss */
+  /* line 21, ../../src/scss/_buttons.scss */
   .button:hover {
     background: #7e13b4; }
-  /* line 24, ../../src/scss/_buttons.scss */
+  /* line 25, ../../src/scss/_buttons.scss */
   .button:active {
     background: #4e0c6f;
     color: #ebccfa; }
+
+/* line 1, ../../src/scss/modules/_cookiebar.scss */
+#cookiebar {
+  background-color: #e5f9ff;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 1em 10em 1em 1em;
+  position: fixed;
+  right: 0;
+  z-index: 4; }
+  /* line 11, ../../src/scss/modules/_cookiebar.scss */
+  #cookiebar p {
+    float: left;
+    margin: .5em 0; }
+  /* line 16, ../../src/scss/modules/_cookiebar.scss */
+  #cookiebar .button {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    width: 7em; }
 
 /* line 1, ../../src/scss/modules/_header.scss */
 .wrapper-header-outer {
