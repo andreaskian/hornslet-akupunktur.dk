@@ -4,14 +4,14 @@ section(role='banner',class='wide',itemscope,itemtype='http://schema.org/Organiz
     p
         span(itemprop='name') Hornslet Akupunktur
         br
-        span(itemtype='http://data-vocabulary.org/Address',itemscope='',itemprop='address')
-            span(itemprop='street-address') Tingvej 69A
+        span(itemtype='http://schema.org/PostalAddress',itemscope,itemprop='address')
+            span(itemprop='streetAddress') Tingvej 69A
             br
-            span(itemprop='postal-code') 8543&nbsp;
-            span(itemprop='locality') Hornslet
+            span(itemprop='postalCode') 8543&nbsp;
+            span(itemprop='addressLocality') Hornslet
             br
-            span(itemprop='region',style='display: none;') Midtjylland
-            span(itemprop='country-name',style='display: none;') Danmark
+            span(itemprop='addressRegion',style='display: none;') Midtjylland
+            span(itemprop='addressCountry',style='display: none;') Danmark
         | Telefon:&nbsp;
         span(itemprop='telephone') 23 67 44 53
         br
@@ -19,5 +19,7 @@ section(role='banner',class='wide',itemscope,itemtype='http://schema.org/Organiz
         a(href='mailto:jytteaku@gmail.com',itemprop='email') jytteaku@gmail.com
         br
         a(href='http://www.hornslet-akupunktur.dk',itemprop='url',style='display: none;') www.hornslet-akupunktur.dk
+        link(itemprop='sameAs', href='https://plus.google.com/b/103599765589932383338/103599765589932383338/posts')
+        link(itemprop='sameAs', href='https://www.facebook.com/pages/Hornslet-Akupunktur/1565917370343197')
         br
         | Åbningstider efter aftale.
