@@ -1,5 +1,5 @@
-.frontpage {
-    img {
+@component hero {
+    @descendent banner {
         max-width: 100%;
     }
 }

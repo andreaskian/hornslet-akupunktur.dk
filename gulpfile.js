@@ -31,8 +31,16 @@ var processors = [
     require('postcss-browser-reporter')(),
     require('postcss-reporter')(),
     require('lost')(),
-    require("csswring")()
+    require('csswring')()
 ];
+
+gulp.task('sitemap', ['templates'], function () {
+    gulp.src('./dist/**/*.html')
+        .pipe(sitemap({
+            siteUrl: 'http://hornslet-akupunktur.dk'
+        }))
+        .pipe(gulp.dest('./dist'));
+});
 
 gulp.task('templates', function () {
     return gulp.src('./src/jade/*.jade')
@@ -43,9 +51,6 @@ gulp.task('templates', function () {
             }
             path.dirname = path.basename.split('-')[0];
             path.basename = 'index';
-        }))
-        .pipe(sitemap({
-            siteUrl: 'http://hornslet-akupunktur.dk'
         }))
         .pipe(gulp.dest('./dist'));
 });
@@ -73,7 +78,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('watch', ['templates', 'scripts', 'styles', 'images'], function() {
+gulp.task('watch', ['sitemap', 'scripts', 'styles', 'images'], function() {
     
     browserSync.init({
         server: './dist'
@@ -81,7 +86,7 @@ gulp.task('watch', ['templates', 'scripts', 'styles', 'images'], function() {
 
     gulp.watch('./src/js/**/*.js', ['scripts', browserSync.reload]);
     gulp.watch('./src/css/**/*.css', ['styles', browserSync.reload]);
-    gulp.watch('./src/jade/**/*.jade', ['templates', browserSync.reload]);
+    gulp.watch('./src/jade/**/*.jade', ['sitemap', browserSync.reload]);
     gulp.watch('./src/images/**/*', ['images']);
     
 });
