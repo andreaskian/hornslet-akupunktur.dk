@@ -1,6 +1,6 @@
-aside {
+@component sidebar {
     
-    section {
+    @descendent item {
         lost-utility: clearfix;
         
         background: var(--bannerBg);
@@ -21,38 +21,40 @@ aside {
             max-width: 6em;
         }
         
-        .container-button {
+        @descendent action {
             clear: right;
+            
+            @media (min-width: 40em) {
+                lost-utility: clearfix;
+                
+                .button {
+                    float: right;
+                }
+            }
         }
         
     }
-
-    @media (min-width: 40em) {
-        .container-button {
-            lost-utility: clearfix;
-            
-            .button {
-                float: right;
-            }
-        }
-    }
-}
-
-aside.frontpage {
-    margin-top: 1.5em;
     
-    section {
-        position: relative;
+    @modifier frontpage {
+        margin-top: 1.5em;
+        
+        @descendent item {
+            position: relative;
+            
+            @media (min-width: 40em) {
+                padding-bottom: 4em;
+                margin: 0 0 2em;
+            }
 
-        @media (min-width: 40em) {
-            padding-bottom: 4em;
-            margin: 0 0 2em;
-
-            .container-button {
-                bottom: 0;
-                position: absolute;
-                right: 0;
+            @descendent action {
+                
+                @media (min-width: 40em) {
+                    bottom: 0;
+                    position: absolute;
+                    right: 0;
+                }
             }
         }
     }
+    
 }
