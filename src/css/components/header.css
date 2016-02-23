@@ -1,16 +1,16 @@
-.wrapper-header-outer {
+@component header {
     background: var(--headerBg);
     height: var(--mainNavHeight);
-}
-
-.main-header {
-    height: var(--mainNavHeight);
-    line-height: var(--mainNavHeight);
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-    h1 {
+    
+    @descendent head {
+        height: var(--mainNavHeight);
+        line-height: var(--mainNavHeight);
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    
+    @descendent logo {
         color: var(--headerColor);
         float: left;
         font-size: 1em;
@@ -19,12 +19,12 @@
         margin-left: var(--gutter);
         text-transform: uppercase;
         
-        span {
+        @descendent logo {
             display: block;
         }
 
-        .small {
-            font-size: 0.688em; /* ~ 11px */
+        @descendent small {
+            font-size: .688em; /* ~ 11px */
             font-style: italic;
             line-height: calc(var(--mainNavHeight) / 2);
             text-align: right;
