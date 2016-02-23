@@ -1,0 +1,45 @@
+* {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Headings */
+
+h1 { color: var(--secondaryColor); }
+
+h2,
+h3,
+h4,
+h5,
+h6 { color: var(--primaryColor); }
+
+body {
+    background: var(--bodyBg);
+}
+
+a {
+    text-decoration: none;
+    &:link, &:active {
+        color: var(--linkColor);
+    }
+    &:visited {
+        color: color(var(--linkColor) b(+5%));
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.wrapper-page-outer {
+    background: var(--pageBg);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    
+    @media min-width: 40em {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+

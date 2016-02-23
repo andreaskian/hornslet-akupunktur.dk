@@ -1,0 +1,24 @@
+:root {
+    --gutter: 3%;
+    
+    --mainNavHeight: 3.750em;
+    
+    --primaryColor: #5e0e86;
+    --primaryColorAlt: #fff;
+    
+    --secondaryColor: #7e05f1;
+    
+    --headerBg: var(--primaryColor);
+    --headerColor: var(--primaryColorAlt);
+    
+    --pageBg: var(--primaryColorAlt);
+    --linkColor: var(--secondaryColor);
+    
+    --bannerBg: #f5ebfe;
+    --bodyBg: var(--primaryColor);
+    
+    --footerBg: var(--primaryColor);
+    --footerColor: #fff;
+}
+
+@lost gutter 3%;

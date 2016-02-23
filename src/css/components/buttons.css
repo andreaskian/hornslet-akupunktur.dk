@@ -1,0 +1,29 @@
+.button {
+    background: var(--primaryColor);
+    border: 0;
+    color: var(--primaryColorAlt);
+    display: block;
+    padding: var(--gutter);
+    text-align: center;
+
+    @media (min-width: 40em) {
+        padding: .5em 1em;
+    }
+
+    &:link,
+    &:active,
+    &:visited,
+    &:hover {
+        color: var(--primaryColorAlt);
+        text-decoration: none;
+    }
+
+    &:hover {
+        background: color(var(--primaryColor) l(+10%));
+    }
+
+    &:active {
+        background: color(var(--primaryColor) b(+5%));
+        color: color(var(--primaryColor) l(+60%));
+    }
+}

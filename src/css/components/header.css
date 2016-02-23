@@ -1,0 +1,34 @@
+.wrapper-header-outer {
+    background: var(--headerBg);
+    height: var(--mainNavHeight);
+}
+
+.main-header {
+    height: var(--mainNavHeight);
+    line-height: var(--mainNavHeight);
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    h1 {
+        color: var(--headerColor);
+        float: left;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: calc(var(--mainNavHeight) / 3);
+        margin-left: var(--gutter);
+        text-transform: uppercase;
+        
+        span {
+            display: block;
+        }
+
+        .small {
+            font-size: 0.688em; /* ~ 11px */
+            font-style: italic;
+            line-height: calc(var(--mainNavHeight) / 2);
+            text-align: right;
+            text-transform: none;
+        }
+    }
+}

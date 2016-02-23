@@ -1,0 +1,58 @@
+aside {
+    
+    section {
+        lost-utility: clearfix;
+        
+        background: var(--bannerBg);
+        margin: 1.7em 0;
+        width: 100%;
+        
+        h2 {
+            padding: 0 1em;
+        }
+        
+        p {
+            lost-utility: clearfix;
+            padding: 0 1.5em;
+        }
+        
+        img {
+            float: right;
+            max-width: 6em;
+        }
+        
+        .container-button {
+            clear: right;
+        }
+        
+    }
+
+    @media (min-width: 40em) {
+        .container-button {
+            lost-utility: clearfix;
+            
+            .button {
+                float: right;
+            }
+        }
+    }
+}
+
+aside.frontpage {
+    margin-top: 1.5em;
+    
+    section {
+        position: relative;
+
+        @media (min-width: 40em) {
+            padding-bottom: 4em;
+            margin: 0 0 2em;
+
+            .container-button {
+                bottom: 0;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

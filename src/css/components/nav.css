@@ -1,0 +1,93 @@
+.wrapper-main-nav {
+    color: var(--headerColor);
+    height: var(--mainNavHeight);
+    line-height: var(--mainNavHeight);
+    position: absolute;
+    top: var(--mainNavHeight);
+    width: 100%;
+    
+    @media (min-width: 40em) {
+        display: block;
+        text-align: right;
+        top: 0;
+    }
+}
+
+.main-nav {
+    background: var(--headerBg);
+    
+    ul {
+        margin: 0 var(--gutter);
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            
+            @media (max-width: 40em) {
+                display: block;
+            }
+            
+            a {
+                color: var(--headerColor);
+                display: block;
+                line-height: 2.5em;
+                padding: 0 var(--gutter);
+                
+                @media (min-width: 40em) {
+                    display: inline-block;
+                    padding: 0 .3em;
+                    line-height: var(--mainNavHeight);
+                }
+                
+                &:link,
+                &:visited,
+                &:active {
+                    color: var(--headerColor);
+                }
+                
+                &:hover {
+                    color: color(var(--secondaryColor) l(+10%));
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 40em) {
+        background: transparent; 
+    }
+}
+
+@media (max-width: 40em) {
+    .toggler {
+        position: absolute;
+        right: 0;
+        top: calc(var(--mainNavHeight) * -1);
+        padding: 0 var(--gutter);
+        
+        &:link,
+        &:visited,
+        &:active {
+            color: var(--headerColor);
+        }
+        
+        &:hover {
+            color: color(var(--secondaryColor) l(+10%));
+            text-decoration: none;
+        }
+    }
+
+    #nav:target       .toggler--open,
+    #nav:not(:target) .toggler--close,
+    #nav:not(:target) ul { display: none; }
+
+    #nav:not(:target) .toggler--open,
+    #nav:target       .toggler--close,
+    #nav:target       ul { display: block; }
+}
+
+@media (min-width: 40em) {
+    .toggler {
+        display: none !important;
+    }
+}

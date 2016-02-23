@@ -1,0 +1,27 @@
+[class^="wrapper"] {
+    lost-utility: clearfix;
+}
+
+@media (min-width: 40em) {
+    .wrapper-page {
+        lost-utility: clearfix;
+        lost-center: 62em;
+        
+        .main-content {
+            lost-column: 8/12 0;
+        }
+        
+        aside:not(.frontpage) {
+            lost-column: 4/12 0;    
+        }
+        
+        aside.frontpage {
+            lost-flex-container: row;
+            
+            section {
+                lost-column: 1/3 flex;
+            }
+        }
+        
+    }
+}
