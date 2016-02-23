@@ -1,4 +1,4 @@
-.button {
+@component button {
     background: var(--primaryColor);
     border: 0;
     color: var(--primaryColorAlt);
