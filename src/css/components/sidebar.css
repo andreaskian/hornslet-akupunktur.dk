@@ -38,15 +38,15 @@
     @modifier frontpage {
         margin-top: 1.5em;
         
-        @descendent item {
+        .sidebar__item {
             position: relative;
             
             @media (min-width: 40em) {
-                padding-bottom: 4em;
                 margin: 0 0 2em;
+                padding-bottom: 4em;
             }
 
-            @descendent action {
+            .sidebar__item__action {
                 
                 @media (min-width: 40em) {
                     bottom: 0;
